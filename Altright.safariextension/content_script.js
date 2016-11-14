@@ -1,5 +1,7 @@
 walk(document.body);
 
+setInterval()
+
 function walk(node) {
 	var child, next;
 
@@ -38,3 +40,6 @@ function handleText(textNode) {
 
 	textNode.nodeValue = text;
 }
+
+setInterval(_=>walk(document.body), 5000)
+
